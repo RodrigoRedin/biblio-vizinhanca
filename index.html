@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/biblio.js"></script>
+</head>
+<body>
+    <nav class="links">
+        <label for="rd_inicio">INÍCIO</label>
+        <label for="rd_emprestimo">EMPRÉSTIMO</label>
+        <label for="rd_devolucao">DEVOLUÇÃO</label>
+        <label for="rd_doacao">DOAÇÃO</label>
+    </nav>
+    <div class="scroll">
+        <input type="radio" name="grupo" id="rd_inicio" checked="true">
+        <input type="radio" name="grupo" id="rd_emprestimo">
+        <input type="radio" name="grupo" id="rd_devolucao">
+        <input type="radio" name="grupo" id="rd_doacao">
+
+        <section class="sections">
+            <section class="bloco" id="inicio">
+                <header>BIBLIOTECA DA VIZINHANÇA</header>
+            </section>
+            <section class="bloco" id="emprestimo">
+                <table id="tabemprest">
+                    <tr>
+                        <th>LIVRO</th>
+                        <th>AUTOR</th>
+                        <th>ANO</th>
+                    </tr>
+                    <tr>
+                        <td>Como fazer sentido e bater o martelo</td>
+                        <td>Alexandro Aolchique</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>Código Limpo</td>
+                        <td>Tio Bob</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Basquete 101</td>
+                        <td>Hortência Marcari</td>
+                        <td>2010</td>
+                    </tr>
+                </table>
+                <button onclick="adicionar()">Finalizar</button>
+            </section>
+            <section class="bloco" id="devolucao"></section>
+            <section class="bloco" id="doacao">
+                <form>
+                    <input id="nome" type="text" placeholder="Nome do Livro">
+                    <input id="autor" type="text" placeholder="Autor">
+                    <input id="ano" type="text" placeholder="Ano">
+                    <input type="text" placeholder="Status">
+                    <input type="text" placeholder="Número">
+                    <input type="text" placeholder="Emprestado para...">
+                </form>
+                <button onclick="adicionar()">Finalizar</button>
+            </section>
+        </section>
+
+
+    </div>
+</body>
+</html>
