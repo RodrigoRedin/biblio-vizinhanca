@@ -84,4 +84,10 @@ header {
 #tabemprest tr:nth-child(even) {
     background-color: #a0a0a0;
 }
-
+#tabemprest tr:not(:first-child):hover {
+    cursor: pointer;
+    opacity: .8;
+}
+#tabemprest th {
+    text-transform: capitalize
+}
