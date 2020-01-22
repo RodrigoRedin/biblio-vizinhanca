@@ -10,34 +10,51 @@
 <body>
     <nav class="links">
         <label for="rd_inicio">INÍCIO</label>
-        <label for="rd_emprestimo">EMPRÉSTIMO</label>
-        <label for="rd_devolucao">DEVOLUÇÃO</label>
+        <label for="rd_emprestimo">EMPRÉSTIMO/DEVOLUÇÃO</label>
         <label for="rd_doacao">DOAÇÃO</label>
     </nav>
     <div class="scroll">
         <input type="radio" name="grupo" id="rd_inicio" checked="true">
         <input type="radio" name="grupo" id="rd_emprestimo">
-        <input type="radio" name="grupo" id="rd_devolucao">
         <input type="radio" name="grupo" id="rd_doacao">
 
         <section class="sections">
             <section class="bloco" id="inicio">
                 <header>BIBLIOTECA DA VIZINHANÇA</header>
+                <div id="textoz">
+                        <ul id="tab1">
+                                <li>RETIRE</li>
+                                <li>Escolha qualquer livro</li>
+                                <li>Veja suas principais informações</li>
+                                <li>Veja sua disponibilidade</li>
+                                <li>Faça a sua reserva e retire o livro</li>
+                            </ul>
+                            <ul>
+                                <li>DEVOLVA</li>
+                                <li>Vá no seu livro selecionado</li>
+                                <li>Simples e Prático</li>
+                                <li>Sem burocracia</li>
+                                <li>Faça a devolução</li>
+                            </ul>
+                            <ul>
+                                <li>DOE</li>
+                                <li>Tem um livro que não quer mais?</li>
+                                <li>Não jogue fora!</li>
+                                <li>Faça o cadastro dele</li>
+                                <li>E em seguida faça a doação</li>
+                            </ul>
+                </div>
             </section>
             <section class="bloco" id="emprestimo">
                 <table id="tabemprest"></table>
             </section>
-            <section class="bloco" id="devolucao"></section>
             <section class="bloco" id="doacao">
                 <form>
                     <input id="nome" type="text" placeholder="Nome do Livro">
                     <input id="autor" type="text" placeholder="Autor">
                     <input id="ano" type="text" placeholder="Ano">
-                    <input type="text" placeholder="Status">
-                    <input type="text" placeholder="Número">
-                    <input type="text" placeholder="Emprestado para...">
+                    <button type="submit">Finalizar</button>
                 </form>
-                <button onclick="adicionar()">Finalizar</button>
             </section>
         </section>
 

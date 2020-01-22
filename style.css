@@ -10,7 +10,8 @@ body {
     display: flex;
 }
 #inicio {
-    background-image: url("assets/book.jpg")
+    background-image: url("assets/book.jpg");
+    display: inline-block
 }
 #emprestimo {
     background-color: #ffffff;
@@ -58,18 +59,14 @@ body {
 #rd_emprestimo:checked ~ .sections{
     margin-top: -100vh;
 }
-#rd_devolucao:checked ~ .sections{
-    margin-top: -200vh;
-}
 #rd_doacao:checked ~ .sections{
-    margin-top: -300vh;
+    margin-top: -200vh;
 }
 header {
     text-align: center;
     font-size: 70px;
     width: 1350px;
     margin-top: 50px;
-    margin-bottom: 70vh
 } 
 #tabemprest {
     font-family: Arial, sans-serif;
@@ -90,4 +87,7 @@ header {
 }
 #tabemprest th {
     text-transform: capitalize
+}
+#textoz {
+    display: flex
 }

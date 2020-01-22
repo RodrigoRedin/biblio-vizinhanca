@@ -1,23 +1,7 @@
-function adicionar(){
-    var table = document.getElementById('tabemprest')
-    var numOfRows = table.rows.length
-    var numOfCols = table.rows[numOfRows-1].cells.length
-    var inserir = []
-    inserir[0] = document.getElementById('nome').value
-    inserir[1] = document.getElementById('autor').value
-    inserir[2] = document.getElementById('ano').value
-    var newRow = table.insertRow(numOfRows);
-    for (var j = 0; j < numOfCols; j++){
-        var newCell = newRow.insertCell(j)
-        newCell.innerHTML = inserir[j]
-    }
-   
-}
-
 // Criando a Tabela de Livros
 let books = [
     {
-        numero: 0001,
+        numero: '0001',
         nome: 'Como fazer sentido e bater o martelo',
         autor: 'Alexandro Aolchique',
         ano: 2017,
@@ -25,7 +9,7 @@ let books = [
         emprestado: ''
     },
     {
-        numero: 0002,
+        numero: '0002',
         nome: 'Código Limpo',
         autor: 'Tio Bob',
         ano: 2001,
@@ -33,7 +17,7 @@ let books = [
         emprestado: ''
     },
     {
-        numero: 0003,
+        numero: '0003',
         nome: 'Poggio Scali',
         autor: 'Hortência Marcari',
         ano: 2010,
